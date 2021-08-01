@@ -1,0 +1,103 @@
+
+#navbar
+{
+	background-color: black;position: fixed;top: 3px;margin: 0px;width: 99%;
+}
+
+#navbar li
+{
+	display: inline;margin: 1.5rem;padding: 1rem;
+}
+#navbar li a
+{
+	color: red;text-decoration: none;font-family: times new roman;font-size: 1.2rem;font-style: italic;
+}
+#navbar li a:hover
+{
+	color: white;font-size: 25px;cursor: pointer;
+}
+#pic_text
+{
+	position: absolute; top: 6rem;left: 2rem; padding: 1rem;
+  	color: white; font-size: 2rem; font-style: italic; font-weight: 500; display: inline-flex; 
+}
+#pic
+{
+	margin:1rem;border: 2px solid red;padding:3px;background-color: transparent;border-radius: 50%;
+}
+#spanid
+{
+	font-size: 2.2rem;font-family: lucida calligraphy;text-decoration: underline;
+}
+#schooling
+{
+	box-sizing: border-box;border: 2px solid black;margin: 2rem;padding: 1rem;text-align: center;width: 50%;font-size: 19px;
+}
+#technicals
+{
+	box-sizing: border-box;border: 2px solid black;margin: 2rem;padding: 1rem;text-align: center;width: 50%;font-size: 19px;
+}
+#skills
+{
+	border: 2px solid black;margin: 2rem;padding: 1rem;width: 50%;font-size: 19px;
+}
+#skills h2
+{
+	text-align: center;
+}
+#hobbies
+{
+	box-sizing: border-box;border: 2px solid black;margin: 2rem;padding: 1rem;width: 50%;font-size: 19px;
+}
+#hobbies h2
+{
+	text-align: center;
+}
+#projects
+{
+		box-sizing: border-box;border: 2px solid black;margin: 2rem;padding: 1rem;font-size: 19px;text-align: center;
+}
+#projects p
+{
+	font-size: 20px;font-style: italic;
+}
+#projects dt,dd
+{
+	text-align: left;
+}
+#div1
+{
+	display: inline-flex; width: 100%;
+}
+#div2
+{
+	display: inline-flex; width: 100%;
+}
+#services
+{
+	box-sizing: border-box;border: 2px solid black;margin: 2rem;padding: 1rem;font-size: 19px;text-align: center;
+}
+#services span
+{
+	font-size: 20px;font-style: italic;
+}
+#ser
+{
+	display: inline-flex; 
+}
+#ser p
+{
+	padding:1rem; border: 2px solid black;border-radius: 20%;margin: 1rem;font-size: 22px;
+}
+#ser p:hover
+{
+	background-color:#00008B; color: white;font-size: 30px;cursor: pointer;
+}
+#button_id
+{
+	font-style: italic;font-size: 30px;text-align: center;background-color: yellow; 
+}
+.fb
+{
+	padding:4px;display: inline-block;size: 2rem;size: 70px;box-shadow: 2px black;
+}
