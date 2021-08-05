@@ -6,9 +6,9 @@
     <meta name="description" content="Mankirat Singh Portfolio">
   	<meta name="keywords" content="Mankirat, MankiratSingh, Mankirat Singh, Portfolio, Mankirat Portfolio, Mankirat Singh Portfolio">
   	<meta name="author" content="Mankirat Singh">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
   	<meta property="og:title" content="Mankirat Singh Portfolio">
-  	<meta property="og:image" content="my pic.jpg">
+  	<meta property="og:image" content="mypic2.jpg">
   	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -23,16 +23,16 @@
 			<li><a href="#social_media">Contact</a></li>
 		</ul>
 	</div>
-	<section style="margin-top: 4rem;">
+	<section style="margin-top: 5em;">
 		<div id="backImg">
-			<img src="background.jpg" height="550 rem" width="100%" alt="This is my protfolio background">
+			<img src="background.jpg" height="520rem" width="100%" alt="This is my protfolio background">
 		</div>
 		<div id="pic_text">
 			<p>
-				<span id="spanid">Heyyy!!</span><br><br><br>
+				<span id="spanid"></span><br><br>
 				My name is Mankirat Singh.<br>
-				I am a 6<sup>th</sup> semester student in CHANDIGARH GROUP of COLLEGES, LADRAN.<br>
-				I am pursuing my Bacherlors of Technology(B-Tech) in<br> Computer Science Engineering.
+				I am a Full Stack Developer and I am an intern at Cyber Group India Pvt Ltd.<br>
+				I am also a 4<sup>th</sup> year B-Tech student.
 			</p>
 			<img src="mypic2.jpg" height="350rem" width="250rem" id="pic">
 		</div>
@@ -40,10 +40,11 @@
 		<div id="schooling">
 			<h2><i><u>My Schooling</u></i></h2>
 			<p> 
-					I did my 12<sup>th</sup> from <i>Shri Guru Tegh Bahadur Public School, Patiala</i> 	  and secured <b>73.2%</b>.<br>
-					I completed my 10<sup>th</sup> from <i>Rainbow School, Saharanpur</i> and secured <b>9.2 CGPA</b>. 
-				</p>
-			</div>
+				I am a 7<sup>th</sup> semester Computer Science Engineering student at CHANDIGARH GROUP of COLLEGES, LADRAN with 8.12 SGPA score. <br>
+				I did my 12<sup>th</sup> from <i>Shri Guru Tegh Bahadur Public School, Patiala </i>and secured <b>73.2%</b>.<br>
+				I completed my 10<sup>th</sup> from <i>Rainbow School, Saharanpur</i> and secured <b>9.2 CGPA</b>. 
+			</p>
+		</div>
 			<div id="technicals">
 				<h2><i><u>Technical Proficiencies</u></i></h2>
 				<p>
@@ -93,7 +94,7 @@
 				</ul>
 			</div>
 			<div id="hobbies">
-				<h2><i><u>Hoobies and Interests</u></i></h2>
+				<h2><i><u>Hobbies and Interests</u></i></h2>
 				<ul>
 					<li>Learn about new technologies</li>
 					<li>Politics</li>
@@ -117,16 +118,21 @@
 			</div>
 		</div>
 		<center>
-		<div id="social_media" style="box-sizing: border-box;border: 2px solid black;">
-			<h2 style="text-align: center;font-size: 22px;"><i><u>My Social Media Handles</u></i></h2>
-			<p style="text-align: center;font-size: 22px;"><i>You can contact me through my social media handles.</i></p>
+		<div id="social_media">
+			<h2><i><u>My Social Media Handles</u></i></h2>
+			<p><i>You can contact me through my social media handles.</i></p>
 			<a href="https://www.facebook.com/" class="fb"><img src="fb.jfif" height="40px" width="60px"></a>
 			<a href="https://www.instagram.com/mankirat_2212/" class="fb" ><img src="insta.jfif" height="40px" width="40px"></a>
 			<a href="mailto:singhmankirat2213@gmail.com" class="fb"><img src="gmail.png" height="40px" width="40px"></a>
 			<a href="https://www.linkedin.com/in/mankirat-singh-a023a9184/" class="fb"><img src="linkedin.png" height="40px" width="40px"></a>
-			<h2 id="button_id">If you want to know more about me <a href="contacts.html" target="_self" height="40px" width="40px"><button>Click here</button></a></h2>
+			<h2 id="h2_id">If you want to know more about me <a href="contacts.html" 
+				target="_blank" height="40px" width="40px"><button id="button_id">Click here</button></a></h2>
 		</div>
 		</center>
 	</section>
+	<script type="text/javascript">
+  		var x=prompt("What is your name?");
+  		document.getElementById('spanid').innerHTML="Heyy "+x+"!!";
+  	</script>
 </body>
 </html>

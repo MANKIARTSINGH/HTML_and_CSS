@@ -2,56 +2,93 @@
 <html>
 <head>
 	<title>Knowing Me More</title>
-</head>
-<script type="text/javascript">
-	function func1()
-	{
-		alert("ThankYou for submitting tour details")
-	}
-</script>
+	<script>  
+	function validateformdetails()
+	{  
+		var first_name=document.myform.fname.value;  
+		var last_name=document.myform.lname.value;
+		var age_n=document.myform.age.value;
+		var mobile_number=document.myform.mobile_num.value;
+		var email  =document.myform.email_id.value;
+		var atposition=email.indexOf("@");  
+		var dotposition=email.lastIndexOf(".");
+		var flag=1;
+		if (first_name==null || first_name==""||last_name==null || last_name=="")
+		{  
+  			alert("Name can't be blank");  
+  			return false;  
+  		}
+  		else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+		{  
+  			alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  			return false;  
+  		} 
+  		else
+  		{
+  			alert("Your details are submitted successfully!");
+  		}
+	} 
+	</script> 
 	<style type="text/css">
 		#forms
 		{
 			font-size: 19px;font-weight: 600; font-family: lucida calligraphy; border: 3px solid black;color: black; text-align: center;padding: 5px; margin-left:200px;margin-right: 200px
 		}
-		#butt
+		#button_id1
 		{
 			font-size: 17px; padding: 2px;box-sizing: border-box;
+		}
+		#button_id2 
+		{
+		font-size: 20px;padding: 5px;margin: 3px;border-radius: 10px; background-color: black;color:white;cursor: pointer;
+		}
+		#button_id2:hover
+		{
+		font-size: 30px;color:red;
 		}
 		h2
 		{
 			font-weight: 600;font-family: Times New Roman;text-align: center;text-decoration: underline;font-size: 35px;
 		}
-	</style>
-<body style="background-image: url('bck.jpg');">
-	<h2>Please fill your details</h2>
-	<div id="forms">
-	<form action="index.html">
-		First Name:-
-		<input type="text" name="fname"><br><br>
-		Last Name
-		<input type="text" name="lname"><br><br>
-		Email
-		<input type="email" name="email_id"><br><br>
-		Select Gender:-
-		<select>
-			<option value="Male">MALE</option>
-			<option value="Female">FEMALE</option>
-			<option value="Others">OTHERS</option>
-		</select> <br><br>
-		Select Your Age Group<br>
-		<input type="checkbox" name="age_details" checked>
-		<label> Below 13</label><br>
-		<input type="checkbox" name="age_details">
-		<label> 13 to 18</label><br>
-		<input type="checkbox" name="age_details">
-		<label> 18 to 30</label><br>
-		<input type="checkbox" name="age_details">
-		<label> Above 30</label><br><br>
-		Please enter your feedback for the portfolio<br><br>
-		<textarea maxlength="200"></textarea><br><br>
-		<button type="submit" id="butt" onclick="func1()">Submit Details</button>
-	</form>
-</div>
-</body>
+		input
+		{
+			width: 250px;height: 20px;
+		}
+		textarea
+		{
+			width: 300px;height: 40px;
+		}
+	</style> 
+</head>
+	<body style="background-image: url('bck.jpg');">
+		<h2>Please fill your details</h2>
+		<div id="forms">
+			<form name="myform">
+				First Name:-
+				<input type="text" name="fname"><br><br>
+				Last Name:-
+				<input type="text" name="lname"><br><br>
+				Email:-
+				<input type="email" name="email_id"><br><br>
+				Select Gender:-
+				<select>
+					<option value="Male">MALE</option>
+					<option value="Female">FEMALE</option>
+					<option value="Others">OTHERS</option>
+				</select> <br><br>
+				What is your age:- 
+				<input type="text" name="age"><br><br>
+				Please Enter your Mobile Number:-
+				<input type="text" name="mobile_num"><br><br>
+				Please enter your any Social media handle:-
+				<input type="text" name="socail_handle" width="70px;"><br><br>
+				Please enter your feedback for the portfolio<br><br>
+				<textarea maxlength="200"></textarea><br><br>
+				<button type="submit" id="button_id1" onclick="validateformdetails()">
+				Submit Details</button>
+			</form>
+			<a href="index.html" target="_self"><button id="button_id2">Portfolio Page
+			</button></a>
+		</div>
+	</body>
 </html>
